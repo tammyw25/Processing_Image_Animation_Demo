@@ -3,11 +3,11 @@ import processing.core.PImage; //import the PImage library
 
 public class Sketch extends PApplet {
 
-  PImage imgMissile; // declare a global image variable
-  // declare rocket
+  PImage imgMeteor; // declare a global image variable
+  //
 
-  float fltMissileX = width/2;
-  float fltMissleY = 400;
+  float fltMeteorX = 200;
+  float fltMeteorY = 200;
 
   float fltCirX = width/2;
   float fltCirY = width/2;
@@ -20,15 +20,17 @@ public class Sketch extends PApplet {
 
   public void setup() {
     background(0);
-    imgMissile = loadImage("spaceMissiles_006.png"); // load the image into the program
+    imgMeteor = loadImage("spaceMeteors_003.png"); // load the image into the program
+    //resize meteor
+
     // load rocket
     // resize rocket
   }
 
   public void draw() {
 
-    // draw missile and move
-    image(imgMissile,fltMissileX,fltMissleY);
+    // draw Meteor and move
+    image(imgMeteor,fltMeteorX,fltMeteorY);
 
     // draw circle and move
 
