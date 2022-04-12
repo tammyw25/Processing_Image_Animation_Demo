@@ -1,36 +1,41 @@
 import processing.core.PApplet;
+import processing.core.PImage; //import the PImage library
 
 public class Sketch extends PApplet {
-	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
+
+  PImage imgMissile; // declare a global image variable
+  // declare rocket
+
+  float fltMissileX = width/2;
+  float fltMissleY = 400;
+
+  float fltCirX = width/2;
+  float fltCirY = width/2;
+
+
   public void settings() {
-	// put your size call here
     size(400, 400);
-  }
-
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
-  public void setup() {
-    background(210, 255, 173);
-  }
-
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
-  public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
-
-    stroke(255);
-    line(50, 125, 70, 50);  
-  }
   
-  // define other methods down here.
+  }
+
+  public void setup() {
+    background(0);
+    imgMissile = loadImage("spaceMissiles_006.png"); // load the image into the program
+    // load rocket
+    // resize rocket
+  }
+
+  public void draw() {
+
+    // draw missile and move
+    image(imgMissile,fltMissileX,fltMissleY);
+
+    // draw circle and move
+
+    // draw rocket and move
+
+
+
+ 
+  }
 }
