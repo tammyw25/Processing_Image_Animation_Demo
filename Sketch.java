@@ -1,6 +1,4 @@
 import processing.core.PApplet;
-import processing.core.PImage; //import the PImage library
-import java.awt.*;
 
 public class Sketch extends PApplet {
 
